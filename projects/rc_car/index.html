@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Dalmolin | Engineering Portfolio</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="icon" type="image/x-icon" href="../../gd_logo.png">
+    <meta name="description"
+        content="Engineering portfolio of Gabriel Dalmolin. Features projects in web development, embedded systems, and automation.">
+</head>
+
+<body class="min-h-screen overflow-x-hidden text-light_gray flex flex-col bg-marine items-center">
+    <nav
+        class="w-full h-[10vh] flex items-center justify-between pr-4 pl-4 sm:pr-8 sm:pl-8 md:pr-12 md:pl-12 bg-marine z-10">
+        <a href="../../index.html" class="text-vibrant_orange font-bold text-lg sm:text-xl md:text-3xl">Gabriel
+            Dalmolin</a>
+        <div
+            class="flex text-custom_green justify-between items-center gap-4 sm:gap-8 md:gap-12 text-md sm:text-lg md:text-xl">
+            <a href="../index.html"
+                class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">Projects</a>
+            <a href="" class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">
+                Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row h-[120vh] md:h-[60vh] gap-10 w-2/3 justify-center mt-10">
+        <img src="thumb.jpg" alt="My remote controlled car" class="max-h-1/2 md:h-full rounded-xl">
+        <p class="pl-5 border-l-2 border-light_gray text-md sm:text-lg md:text-xl text-justify">This is the remote
+            controlled car I
+            made for a school project, we were asked to do an electric car using a battery, some motors and wires. I
+            wanted to go beyond that and create a really cool project, so, using a PS3 controller with a
+            microcontroller, I made my car remote controlled. As an addicional, I also used some infrared sensors to
+            make it a line follower.
+            <br>
+            <br>
+            September - 2024
+        </p>
+    </div>
+    <hr class="border-1 border-light_gray w-2/3 mt-5">
+
+    <div class="flex flex-col items-center p-5">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10">Some videos of it</h1>
+        <div class="flex flex-wrap h-[50vh] gap-10">
+            <video src="video_1.mp4" class="h-full rounded-xl" controls></video>
+            <video src="video_2.mp4" class="h-full rounded-xl" controls></video>
+        </div>
+    </div>
+
+    <hr class="border-1 border-light_gray w-2/3 mb-5">
+
+    <div class="flex flex-col w-2/3 text-justify">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10 place-self-center">What I learned</h1>
+        <p class="text-md sm:text-lg md:text-xl text-justify">This was one of the first projects that got me into this
+            world of engineering, with it, I understood embedded
+            programming in microcontrollers using the language C, I used the bluetooth module that's already integrated
+            into the esp32 chip to connect the car to the PS3 controller. From there, it was really simple, I just had
+            to take the input from the controller joystick and translate that to the motors spin, so for example, if the
+            user pushed the joystick forwards, I just had to spin the corresponding motor forwards too. So, as I said
+            before, I put a line follower as an extra feature, then, if you press the square button on the controller it
+            turned the line follower on/off. To make it work, I used some infrared sensors that could "see" if the color
+            behind it is light or dark, so, the ESP32 makes the calculation and set the motors speed to the one that
+            would make it go straight in the black line.
+        </p>
+        <br>
+        <h2 class="text-lg sm:text-xl md:text-2xl">Techs I used</h2>
+        <ul class="list-disc list-inside text-md sm:text-lg md:text-xl">
+            <li>ESP32 Microcontroller</li>
+            <li>PS3 Controller via Bluetooth</li>
+            <li>Infrared line sensors</li>
+            <li>DC Motors</li>
+            <li>Embedded C programming</li>
+            <li>Arduino IDE</li>
+        </ul>
+        <br>
+        <div>
+            <span>If you want, you can take a look at the code here: </span>
+            <a href="first_tests.ino" download="Gabriel_Dalmolin_Logo" class="font-semibold underline">
+                Download the code</a>
+        </div>
+
+        <div class="my-10 items-center flex flex-col">
+            <h2 class="text-xl sm:text-2xl md:text-3xl mb-4">Challenges and Solutions</h2>
+            <p class="text-md sm:text-lg md:text-xl text-justify">
+                One of the biggest challenges was making the PS3 controller communicate properly with the ESP32 via
+                Bluetooth. I had to use some libraries that weren't well documented, but at the end I could figure it
+                out by changing the MAC address of the controller, and setting the microcontroller to connect to this
+                exact same address. Another challenge was to make it turn smoothly in the curves, but I could manage to
+                solve it too doing some calculations to set the turn speed proportional to its misalignment.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

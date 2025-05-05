@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Dalmolin | Engineering Portfolio</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="icon" type="image/x-icon" href="../../gd_logo.png">
+    <meta name="description"
+        content="Engineering portfolio of Gabriel Dalmolin. Features projects in web development, embedded systems, and automation.">
+</head>
+
+<body class="min-h-screen overflow-x-hidden text-light_gray flex flex-col bg-marine items-center">
+    <nav
+        class="w-full h-[10vh] flex items-center justify-between pr-4 pl-4 sm:pr-8 sm:pl-8 md:pr-12 md:pl-12 bg-marine z-10">
+        <a href="../../index.html" class="text-vibrant_orange font-bold text-lg sm:text-xl md:text-3xl">Gabriel
+            Dalmolin</a>
+        <div
+            class="flex text-custom_green justify-between items-center gap-4 sm:gap-8 md:gap-12 text-md sm:text-lg md:text-xl">
+            <a href="../index.html"
+                class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">Projects</a>
+            <a href="" class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">
+                Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row h-[120vh] md:h-[60vh] gap-10 w-2/3 justify-center mt-10">
+        <img src="thumb.png" alt="My remote controlled car" class="max-h-1/2 md:h-full rounded-xl">
+        <p class="pl-5 border-l-2 border-light_gray text-md sm:text-lg md:text-xl text-justify">Lancerforge is a website
+            made to make freelancers lives easier, by managing all their projects in just one place, it offers the
+            functions of, project management and classification, task management, kanban, time and expenses tracking on
+            each project, automatic calculation of costs and CRUD operations (Create, Read, Update and Delete). Its
+            located at
+            <a href="https://lancerforge.com" class="font-semibold underline">lancerforge.com</a>
+            <br>
+            <br>
+            February - 2025
+        </p>
+    </div>
+    <hr class="border-1 border-light_gray w-2/3 mt-5">
+
+    <div class="flex flex-col items-center p-5">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10">Some photos of it</h1>
+        <div class="flex flex-wrap min-h-[50vh] gap-10 justify-center">
+            <img src="image_0.png" alt="Landing page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_1.png" alt="Login page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_2.png" alt="Sign up page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_3.png" alt="Main page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_4.png" alt="Kanban tasks page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_5.png" alt="Kanban tasks page 2" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_6.png" alt="Project page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_7.png" alt="Tasks by project page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_8.png" alt="Expenses page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_9.png" alt="Time tracker page" class="w-full md:w-[40vw] rounded-lg">
+            <img src="image_10.png" alt="Premium upgrade page" class="w-full md:w-[40vw] rounded-lg">
+        </div>
+    </div>
+
+    <hr class="border-1 border-light_gray w-2/3 mb-5">
+
+    <div class="flex flex-col w-2/3 text-justify">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10 place-self-center">What I learned</h1>
+        <p class="text-md sm:text-lg md:text-xl text-justify">This was my first big project with programming, for it, I
+            used Django and learnt everything from the basics, I could learn how to create models for the database,
+            creating users, handling logins, and signing them in, merging python with html, css and javascript,
+            deploying a real
+            project into the web and also integrating the stripe API for the premium features of it. At all, I really
+            enjoyed this project and was very happy to see people really using it on their day to day life, I got some
+            reviews on discord and most of them liked it and said that it was useful for them.
+        </p>
+        <br>
+        <h2 class="text-lg sm:text-xl md:text-2xl">Techs I used</h2>
+        <ul class="list-disc list-inside text-md sm:text-lg md:text-xl">
+            <li>Python with Django</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Tailwind CSS</li>
+            <li>PostgreSQL</li>
+            <li>Gunicorn</li>
+            <li>Nginx</li>
+            <li>Stripe API</li>
+            <li>Hostinger for deploying</li>
+        </ul>
+        <br>
+
+        <div class="my-10 items-center flex flex-col">
+            <h2 class="text-xl sm:text-2xl md:text-3xl mb-4">Challenges and Solutions</h2>
+            <p class="text-md sm:text-lg md:text-xl text-justify">
+                I think that my biggest challenge on this project was linking the stripe API and making it work, because
+                it works by sending a lot of different types of requests, you need to read them, identify the type and
+                see what you need to do with it, maybe its updating an user to premium, removing the premium for a user,
+                deleting the user... Also, everytime you create an user on your database you need to create a customer
+                for it on the stripe, what made it even more difficult.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
