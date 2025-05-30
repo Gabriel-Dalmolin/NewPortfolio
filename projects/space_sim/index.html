@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Dalmolin | Engineering Portfolio</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="icon" type="image/x-icon" href="../../gd_logo.png">
+    <meta name="description"
+        content="Engineering portfolio of Gabriel Dalmolin. Features projects in web development, embedded systems, and automation.">
+</head>
+
+<body class="min-h-screen overflow-x-hidden text-light_gray flex flex-col bg-marine items-center">
+    <nav
+        class="w-full h-[10vh] flex items-center justify-between pr-4 pl-4 sm:pr-8 sm:pl-8 md:pr-12 md:pl-12 bg-marine z-10">
+        <a href="../../index.html" class="text-vibrant_orange font-bold text-lg sm:text-xl md:text-3xl">Gabriel
+            Dalmolin</a>
+        <div
+            class="flex text-custom_green justify-between items-center gap-4 sm:gap-8 md:gap-12 text-md sm:text-lg md:text-xl">
+            <a href="../index.html"
+                class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">Projects</a>
+            <a href="" class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100">
+                Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row h-[120vh] md:h-[60vh] gap-10 w-2/3 justify-center mt-10">
+        <video src="media/video_2.mp4" class="max-h-1/2 md:h-full rounded-xl md:max-w-[60%] object-right object-cover"
+            autoplay></video>
+        <p class="pl-5 border-l-2 border-light_gray text-md sm:text-lg md:text-xl text-justify">Space is pretty cool
+            right? Why should't we just simulate how some bodies interact with eachother on it? Thinking about this and
+            wanting to get a deeper understand of the gravity, I did this quick project just for fun, hope you enjoy it!
+            <br>
+            <br>
+            <a href="https://gabriel-dalmolin.github.io/Space-Simulator/"
+                class="transition-all hover:text-vibrant_orange duration-300 hover:scale-110 active:scale-100 text-custom_green underline">If
+                you want to check it out, here is the link!</a>
+            <br>
+            <br>
+            May - 2025
+        </p>
+    </div>
+    <hr class="border-1 border-light_gray w-2/3 mt-5">
+
+    <div class="flex flex-col items-center p-5">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10">A label to help u :D</h1>
+        <div class="flex flex-wrap gap-10 items-center justify-center">
+            <img src="media/label.png" alt="The label image" class="md:w-[80vw] object-fill">
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center p-5">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10">Some videos of it</h1>
+        <div class="flex flex-wrap gap-10 items-center justify-center">
+            <video src="media/video_1.mp4" class="h-[50vh] rounded-xl" controls></video>
+            <video src="media/video_2.mp4" class="h-[50vh] rounded-xl" controls></video>
+            <video src="media/video_3.mp4" class="h-[50vh] rounded-xl" controls></video>
+        </div>
+    </div>
+
+    <hr class="border-1 border-light_gray w-2/3 mb-5">
+
+    <div class="flex flex-col w-2/3 text-justify">
+        <h1 class="text-xl sm:text-2xl md:text-3xl mb-10 place-self-center">What I learned</h1>
+        <p class="text-md sm:text-lg md:text-xl text-justify">So, at the start I wanted to do it using python because it
+            was pretty easier, but, how would I share with you if I did it with python? So, I decided to just go with
+            pure js, html and css.
+            <br>
+            <br>
+            I used the canvas html element which give me a huuuuge help, it was pretty easy to
+            quickly draw every planet while keeping track of each ones of theirs location using objects and lists. With
+            that done, I just needed to calculate where the body is going to move, I didn't went really deep into this,
+            just used the classical newtonian physics (F = G*m1*m2/r**2), doing some adjustments on this formula and
+            combining it with (F = m * a) you can cancel out one of the masses and get that the acceleration of a body =
+            G * m2 (mass of the other body) / r ** 2.
+            <br>
+            <br>
+            From there, multiply the acceleration that you got by the dt you
+            are using, which gives how much a body velocity will change in the next frame, add that to the velocity, add
+            the velocity * dt to the position, annnnd finaly you are done and can draw it on the canvas :D
+        </p>
+        <br>
+        <h2 class="text-lg sm:text-xl md:text-2xl">Techs I used</h2>
+        <ul class="list-disc list-inside text-md sm:text-lg md:text-xl">
+            <li>Javascript</li>
+            <li>Html</li>
+            <li>Tailwind CSS</li>
+            <li>Classical Mechanics</li>
+            <li>Lil bit of calculus</li>
+            <li>Github pages (making the webpage)</li>
+        </ul>
+        <br>
+
+        <div class="my-10 items-center flex flex-col">
+            <h2 class="text-xl sm:text-2xl md:text-3xl mb-4">Challenges and Solutions</h2>
+            <p class="text-md sm:text-lg md:text-xl text-justify">
+                As I said before, this project was more of a fun thing for me, just like a hobby, but some challenges
+                that I faced where how to make the feature to follow planets, it was not really hard, but with the way I
+                did my code it was practically impossible, so, I had to refactor the code to make it possible.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
